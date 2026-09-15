@@ -104,7 +104,8 @@ $$\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \m
 
 1. **$\mathbb{N}$ (Натуральные числа)** — числа, используемые при счете предметов: $\mathbb{N} = \{1, 2, 3, 4, \dots\}$
 2. **$\mathbb{Z}$ (Целые числа)** — натуральные, им противоположные и ноль: $\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$
-3. **$\mathbb{Q}$ (Рациональные числа)** — числа, представимые в виде обыкновенной дроби: $$\mathbb{Q} = \left\{\frac{m}{n} \;\middle|\; m \in \mathbb{Z}, n \in \mathbb{N}\right\}$$
+3. **$\mathbb{Q}$ (Рациональные числа)** — числа, представимые в виде обыкновенной дроби: 
+   $$\mathbb{Q} = \left\{ \frac{m}{n} \;\middle|\; m \in \mathbb{Z}, n \in \mathbb{N} \right\}$$
 4. **$\mathbb{R}$ (Действительные / Вещественные числа)** — объединение рациональных и иррациональных чисел (все точки числовой прямой).
 5. **$\mathbb{C}$ (Комплексные числа)** — расширение множества вещественных чисел для решения уравнений вида $x^2 = -1$.
 
@@ -204,6 +205,31 @@ $$= r_1 r_2 (\cos(\varphi_1 + \varphi_2) + i\sin(\varphi_1 + \varphi_2)) \quad \
 
 ---
 
-Корень $n$-й степени из комплексного числа $Z$ — это такое комплексное число $W$, что $W^n = Z$.Запись: $\sqrt[n]{Z} = W \iff W^n = Z$Если $Z = r(\cos\varphi + i\sin\varphi)$, то извлечение корня имеет ровно $n$ различных значений и вычисляется по формуле:$$\sqrt[n]{Z} = \sqrt[n]{r}\left(\cos\frac{\varphi + 2\pi k}{n} + i\sin\frac{\varphi + 2\pi k}{n}\right), \quad k = 0, 1, 2, \dots, n-1$$Геометрически все $n$ значений корня лежат на окружности радиуса $R = \sqrt[n]{r}$ с центром в начале координат и образуют вершины правильного $n$-угольника. Пример: Вычислить $\sqrt[4]{-8 + 8\sqrt{3}i}$Пусть $Z = -8 + 8\sqrt{3}i$. Нам нужно найти значения для $n = 4$. Модуль:$$r = \sqrt{(-8)^2 + (8\sqrt{3})^2} = \sqrt{64 + 64 \cdot 3} = \sqrt{256} = 16$$Аргумент: Точка во II четверти ($x = -8, y = 8\sqrt{3}$).$$\tan\varphi = \frac{8\sqrt{3}}{-8} = -\sqrt{3} \implies \varphi = \frac{2\pi}{3}$$Общая тригонометрическая форма корня:$$\sqrt[4]{Z} = \sqrt[4]{16}\left(\cos\frac{\frac{2\pi}{3} + 2\pi k}{4} + i\sin\frac{\frac{2\pi}{3} + 2\pi k}{4}\right) = 2\left(\cos\left(\frac{\pi}{6} + \frac{\pi k}{2}\right) + i\sin\left(\frac{\pi}{6} + \frac{\pi k}{2}\right)\right)$$Для получения всех 4-х корней последовательно подставим $k = 0, 1, 2, 3$:
-При $k = 0$: 
-$W_0 = 2\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right) = 2\left(\frac{\sqrt{3}}{2} + i\frac{1}{2}\right) = \sqrt{3} + i$При $k = 1$: $W_1 = 2\left(\cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3}\right) = 2\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = -1 + \sqrt{3}i$При $k = 2$: $W_2 = 2\left(\cos\frac{7\pi}{6} + i\sin\frac{7\pi}{6}\right) = 2\left(-\frac{\sqrt{3}}{2} - i\frac{1}{2}\right) = -\sqrt{3} - i$При $k = 3$: $W_3 = 2\left(\cos\frac{5\pi}{3} + i\sin\frac{5\pi}{3}\right) = 2\left(\frac{1}{2} - i\frac{\sqrt{3}}{2}\right) = 1 - \sqrt{3}i$
+### Извлечение корня натуральной степени из комплексного числа
+
+> **Корень $n$-й степени** из комплексного числа $Z$ — это такое комплексное число $W$, что $W^n = Z$.
+> 
+> Запись: $\sqrt[n]{Z} = W \iff W^n = Z$
+
+Если $Z = r(\cos\varphi + i\sin\varphi)$, то извлечение корня имеет ровно $n$ различных значений и вычисляется по формуле:
+$$\sqrt[n]{Z} = \sqrt[n]{r}\left(\cos\frac{\varphi + 2\pi k}{n} + i\sin\frac{\varphi + 2\pi k}{n}\right), \quad k = 0, 1, 2, \dots, n-1$$
+
+Геометрически все $n$ значений корня лежат на окружности радиуса $R = \sqrt[n]{r}$ с центром в начале координат и образуют вершины правильного $n$-угольника.
+
+#### Пример: Вычислить $\sqrt[4]{-8 + 8\sqrt{3}i}$
+
+Пусть $Z = -8 + 8\sqrt{3}i$. Нам нужно найти значения для $n = 4$.
+
+* **Модуль:** 
+  $$r = \sqrt{(-8)^2 + (8\sqrt{3})^2} = \sqrt{64 + 64 \cdot 3} = \sqrt{256} = 16$$
+* **Аргумент:** Точка лежит во II четверти ($x = -8, y = 8\sqrt{3}$).
+  $$\tan\varphi = \frac{8\sqrt{3}}{-8} = -\sqrt{3} \implies \varphi = \frac{2\pi}{3}$$
+* **Общая тригонометрическая форма корня:**
+  $$\sqrt[4]{Z} = \sqrt[4]{16}\left(\cos\frac{\frac{2\pi}{3} + 2\pi k}{4} + i\sin\frac{\frac{2\pi}{3} + 2\pi k}{4}\right) = 2\left(\cos\left(\frac{\pi}{6} + \frac{\pi k}{2}\right) + i\sin\left(\frac{\pi}{6} + \frac{\pi k}{2}\right)\right)$$
+
+Для получения всех 4-х корней последовательно подставим $k = 0, 1, 2, 3$:
+
+* **При $k = 0$:** $W_0 = 2\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right) = 2\left(\frac{\sqrt{3}}{2} + i\frac{1}{2}\right) = \sqrt{3} + i$
+* **При $k = 1$:** $W_1 = 2\left(\cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3}\right) = 2\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right) = -1 + \sqrt{3}i$
+* **При $k = 2$:** $W_2 = 2\left(\cos\frac{7\pi}{6} + i\sin\frac{7\pi}{6}\right) = 2\left(-\frac{\sqrt{3}}{2} - i\frac{1}{2}\right) = -\sqrt{3} - i$
+* **При $k = 3$:** $W_3 = 2\left(\cos\frac{5\pi}{3} + i\sin\frac{5\pi}{3}\right) = 2\left(\frac{1}{2} - i\frac{\sqrt{3}}{2}\right) = 1 - \sqrt{3}i$
