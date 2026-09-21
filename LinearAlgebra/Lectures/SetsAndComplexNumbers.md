@@ -197,7 +197,7 @@ $$Z_1 \cdot Z_2 = r_1(\cos\varphi_1 + i\sin\varphi_1) \cdot r_2(\cos\varphi_2 + 
 $$= r_1 r_2 (\cos\varphi_1\cos\varphi_2 + i\cos\varphi_1\sin\varphi_2 + i\sin\varphi_1\cos\varphi_2 + i^2\sin\varphi_1\sin\varphi_2) =$$
 Используя $i^2 = -1$ и тригонометрические формулы косинуса и синуса суммы:
 $$= r_1 r_2 ((\cos\varphi_1\cos\varphi_2 - \sin\varphi_1\sin\varphi_2) + i(\sin\varphi_1\cos\varphi_2 + \cos\varphi_1\sin\varphi_2)) =$$
-$$= r_1 r_2 (\cos(\varphi_1 + \varphi_2) + i\sin(\varphi_1 + \varphi_2)) \quad \blacksquare$$
+$$= r_1 r_2 (\cos(\varphi_1 + \varphi_2) + i\sin(\varphi_1 + \varphi_2)) \quad $$
 </details>
 
 > **Формула Муавра** (возведение в $n$-ю степень):
